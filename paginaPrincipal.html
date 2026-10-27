@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lêBrasil - Página Principal</title>
+    <link rel="stylesheet" href="/FRONTEND/STYLES/paginaPrincipal.css">
+    <link rel="icon" type="image/png" href="/FRONTEND/IMAGES/Logos/Logo_Principal.png">
+</head>
+<body>
+    <header>
+        <a href="/FRONTEND/PAGES/paginaPrincipal.html">
+            <img id="Logo" src="/FRONTEND/IMAGES/Logos/Logo_Principal.png" alt="Logo do Site" width="70px">
+        </a>
+        <div class="abas">
+            <a class="pesquisa" href="pesquisa.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8BC0D4">
+                    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                </svg>
+            </a>
+            <a class="redacao" href="Redacao.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8BC0D4">
+                    <path d="M160-120v-170l527-526q12-12 27-18t30-6q16 0 30.5 6t25.5 18l56 56q12 11 18 25.5t6 30.5q0 15-6 30t-18 27L330-120H160Zm80-80h56l393-392-28-29-29-28-392 393v56Zm560-503-57-57 57 57Zm-139 82-29-28 57 57-28-29ZM560-120q74 0 137-37t63-103q0-36-19-62t-51-45l-59 59q23 10 36 22t13 26q0 23-36.5 41.5T560-200q-17 0-28.5 11.5T520-160q0 17 11.5 28.5T560-120ZM183-426l60-60q-20-8-31.5-16.5T200-520q0-12 18-24t76-37q88-38 117-69t29-70q0-55-44-87.5T280-840q-45 0-80.5 16T145-785q-11 13-9 29t15 26q13 11 29 9t27-13q14-14 31-20t42-6q41 0 60.5 12t19.5 28q0 14-17.5 25.5T262-654q-80 35-111 63.5T120-520q0 32 17 54.5t46 39.5Z"/>
+                </svg>
+                <p>Redação</p>
+            </a>
+            <a class="nivel" href="nivel.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8BC0D4">
+                    <path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm400 0q36-13 58-43.5t22-68.5v-40h-80v152Z"/>
+                </svg>
+                <p>Nível</p>
+            </a>
+            <a class="perfil" href="perfil.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8BC0D4">
+                    <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/>
+                </svg>
+                <p>Perfil</p>
+            </a>
+            <button class="sair" type="button" onclick="sairSite()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#8BC0D4">
+                    <path d="M189.06-113.3q-31 0-53.38-22.38-22.38-22.38-22.38-53.38v-581.88q0-31.06 22.38-53.49 22.38-22.43 53.38-22.43h291.87v75.92H189.06v581.88h291.87v75.76H189.06ZM654.7-287.1l-53.45-54.14 100.72-100.88H358.41v-75.76h342.23L599.91-618.76l53.46-54.14 193.49 193.57L654.7-287.1Z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="luz-direita"></div>
+    
+    <div class="luz-esquerda"></div>
+
+    <div class="biblioteca">
+        <div class="posicao_site">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 15V13.125H15V15H0ZM1.5 11.25V3.75H3V11.25H1.5ZM4.5 11.25V0H6V11.25H4.5ZM7.5 11.25V0H9V11.25H7.5ZM12.75 11.25L9.75 4.6875L11.0625 3.75L14.0625 10.3125L12.75 11.25Z" fill="#3890B1"/>
+            </svg>
+            <p>Sua Biblioteca</p>
+        </div>
+        <h1>Continue sua Aventura</h1>
+    </div>
+    <div class="card-section">
+        <div class="primeira-linha">
+            <div class="card">
+                <div class="card-header DC">
+                    <div class="badge-xp">
+                        <div class="pontuacao">
+                            <p>★</p>
+                            <span>+700 XP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body Dom_C">
+                    <div class="title-row">
+                        <div class="title-author">
+                            <h2>Dom Casmurro</h2>
+                            <p class="author">Machado de Assis</p>
+                        </div>                        
+                        <span class="year">1899</span>
+                    </div>
+                    <p class="difficulty">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.1875 12.6127C0.729167 11.1771 0 9.43391 0 7.38306C0 5.33221 0.729167 3.58899 2.1875 2.15339C3.64583 0.717797 5.41667 0 7.5 0C9.58333 0 11.3542 0.717797 12.8125 2.15339C14.2708 3.58899 15 5.33221 15 7.38306C15 9.43391 14.2708 11.1771 12.8125 12.6127C11.3542 14.0483 9.58333 14.7661 7.5 14.7661C5.41667 14.7661 3.64583 14.0483 2.1875 12.6127ZM11.4 11.2222C12.4667 10.1722 13 8.89248 13 7.38306C13 5.87363 12.4667 4.5939 11.4 3.54387C10.3333 2.49383 9.03333 1.96882 7.5 1.96882C5.96667 1.96882 4.66667 2.49383 3.6 3.54387C2.53333 4.5939 2 5.87363 2 7.38306C2 8.89248 2.53333 10.1722 3.6 11.2222C4.66667 12.2723 5.96667 12.7973 7.5 12.7973C9.03333 12.7973 10.3333 12.2723 11.4 11.2222ZM9.5 10.8285L10.9 9.45032L8.5 7.06313V3.44543H6.5V7.87526L9.5 10.8285Z" fill="white"/>
+                        </svg>
+                        Díficil
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Progresso</span>
+                            <span id="progresso-texto">20%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progresso-barra" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <a class="btn-continue" id="btnFullscreen" href="/PAGES/Livros/Dom_Casmurro/Dom_Casmurro.html">
+                        Continuar
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header I">
+                    <div class="badge-xp">
+                        <div class="pontuacao">
+                            <p>★</p>
+                            <span>+550 XP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body Irace">
+                    <div class="title-row">
+                        <div class="title-author">
+                            <h2>Iracema</h2>
+                            <p class="author">José de Alencar</p>
+                        </div>
+                        <span class="year">1865</span>
+                    </div>
+                    <p class="difficulty">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.1875 12.6127C0.729167 11.1771 0 9.43391 0 7.38306C0 5.33221 0.729167 3.58899 2.1875 2.15339C3.64583 0.717797 5.41667 0 7.5 0C9.58333 0 11.3542 0.717797 12.8125 2.15339C14.2708 3.58899 15 5.33221 15 7.38306C15 9.43391 14.2708 11.1771 12.8125 12.6127C11.3542 14.0483 9.58333 14.7661 7.5 14.7661C5.41667 14.7661 3.64583 14.0483 2.1875 12.6127ZM11.4 11.2222C12.4667 10.1722 13 8.89248 13 7.38306C13 5.87363 12.4667 4.5939 11.4 3.54387C10.3333 2.49383 9.03333 1.96882 7.5 1.96882C5.96667 1.96882 4.66667 2.49383 3.6 3.54387C2.53333 4.5939 2 5.87363 2 7.38306C2 8.89248 2.53333 10.1722 3.6 11.2222C4.66667 12.2723 5.96667 12.7973 7.5 12.7973C9.03333 12.7973 10.3333 12.2723 11.4 11.2222ZM9.5 10.8285L10.9 9.45032L8.5 7.06313V3.44543H6.5V7.87526L9.5 10.8285Z" fill="white"/>
+                        </svg>
+                        Fácil
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Progresso</span>
+                            <span id="progresso-texto">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progresso-barra" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <a class="btn-continue" id="btnFullscreen" href="/PAGES/Livros/Iracema/Iracema.html">
+                        Continuar
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header OC">
+                    <div class="badge-xp">
+                        <div class="pontuacao">
+                            <p>★</p>
+                            <span>+450 XP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body O_Cort">
+                    <div class="title-row">
+                        <div class="title-author">
+                            <h2>O Cortiço</h2>
+                            <p class="author">Aluísio Azevedo</p>
+                        </div>
+                        <span class="year ">1890</span>
+                    </div>
+                    <p class="difficulty">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.1875 12.6127C0.729167 11.1771 0 9.43391 0 7.38306C0 5.33221 0.729167 3.58899 2.1875 2.15339C3.64583 0.717797 5.41667 0 7.5 0C9.58333 0 11.3542 0.717797 12.8125 2.15339C14.2708 3.58899 15 5.33221 15 7.38306C15 9.43391 14.2708 11.1771 12.8125 12.6127C11.3542 14.0483 9.58333 14.7661 7.5 14.7661C5.41667 14.7661 3.64583 14.0483 2.1875 12.6127ZM11.4 11.2222C12.4667 10.1722 13 8.89248 13 7.38306C13 5.87363 12.4667 4.5939 11.4 3.54387C10.3333 2.49383 9.03333 1.96882 7.5 1.96882C5.96667 1.96882 4.66667 2.49383 3.6 3.54387C2.53333 4.5939 2 5.87363 2 7.38306C2 8.89248 2.53333 10.1722 3.6 11.2222C4.66667 12.2723 5.96667 12.7973 7.5 12.7973C9.03333 12.7973 10.3333 12.2723 11.4 11.2222ZM9.5 10.8285L10.9 9.45032L8.5 7.06313V3.44543H6.5V7.87526L9.5 10.8285Z" fill="white"/>
+                        </svg>
+                        Fácil
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Progresso</span>
+                            <span id="progresso-texto">0%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progresso-barra" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <a class="btn-continue" id="btnFullscreen" href="/PAGES/Livros/O_Cortiço/O_Cortiço.html">
+                        Continuar
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="segunda-linha">
+            <div class="card">
+                <div class="card-header OG">
+                    <div class="badge-xp">
+                        <div class="pontuacao">
+                            <p>★</p>
+                            <span>+850 XP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body O_Guar">
+                    <div class="title-row">
+                        <div class="title-author">
+                            <h2>O Guarani</h2>
+                            <p class="author">José de Alencar</p>                        
+                        </div>
+                        <span class="year">1857</span>
+                    </div>
+                    <p class="difficulty">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.1875 12.6127C0.729167 11.1771 0 9.43391 0 7.38306C0 5.33221 0.729167 3.58899 2.1875 2.15339C3.64583 0.717797 5.41667 0 7.5 0C9.58333 0 11.3542 0.717797 12.8125 2.15339C14.2708 3.58899 15 5.33221 15 7.38306C15 9.43391 14.2708 11.1771 12.8125 12.6127C11.3542 14.0483 9.58333 14.7661 7.5 14.7661C5.41667 14.7661 3.64583 14.0483 2.1875 12.6127ZM11.4 11.2222C12.4667 10.1722 13 8.89248 13 7.38306C13 5.87363 12.4667 4.5939 11.4 3.54387C10.3333 2.49383 9.03333 1.96882 7.5 1.96882C5.96667 1.96882 4.66667 2.49383 3.6 3.54387C2.53333 4.5939 2 5.87363 2 7.38306C2 8.89248 2.53333 10.1722 3.6 11.2222C4.66667 12.2723 5.96667 12.7973 7.5 12.7973C9.03333 12.7973 10.3333 12.2723 11.4 11.2222ZM9.5 10.8285L10.9 9.45032L8.5 7.06313V3.44543H6.5V7.87526L9.5 10.8285Z" fill="white"/>
+                        </svg>
+                        Difícil
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Progresso</span>
+                            <span id="progresso-texto">30%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progresso-barra" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <a class="btn-continue" id="btnFullscreen" href="/PAGES/Livros/O_Guarani/O_Guarani.html">
+                        Continuar
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header VS">
+                    <div class="badge-xp">
+                        <div class="pontuacao">
+                            <p>★</p>
+                            <span>+350 XP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body Vidas_S">
+                    <div class="title-row">
+                        <div class="title-author">
+                            <h2>Vidas Secas</h2>
+                            <p class="author">Graciliano Ramos</p>
+                        </div>
+                        <span class="year">1938</span>
+                    </div>
+                    <p class="difficulty">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.1875 12.6127C0.729167 11.1771 0 9.43391 0 7.38306C0 5.33221 0.729167 3.58899 2.1875 2.15339C3.64583 0.717797 5.41667 0 7.5 0C9.58333 0 11.3542 0.717797 12.8125 2.15339C14.2708 3.58899 15 5.33221 15 7.38306C15 9.43391 14.2708 11.1771 12.8125 12.6127C11.3542 14.0483 9.58333 14.7661 7.5 14.7661C5.41667 14.7661 3.64583 14.0483 2.1875 12.6127ZM11.4 11.2222C12.4667 10.1722 13 8.89248 13 7.38306C13 5.87363 12.4667 4.5939 11.4 3.54387C10.3333 2.49383 9.03333 1.96882 7.5 1.96882C5.96667 1.96882 4.66667 2.49383 3.6 3.54387C2.53333 4.5939 2 5.87363 2 7.38306C2 8.89248 2.53333 10.1722 3.6 11.2222C4.66667 12.2723 5.96667 12.7973 7.5 12.7973C9.03333 12.7973 10.3333 12.2723 11.4 11.2222ZM9.5 10.8285L10.9 9.45032L8.5 7.06313V3.44543H6.5V7.87526L9.5 10.8285Z" fill="white"/>
+                        </svg>
+                        Médio
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Progresso</span>
+                            <span id="progresso-texto">30%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progresso-barra" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <a class="btn-continue" id="btnFullscreen" href="/PAGES/Livros/Vidas_Secas/Vidas_Secas.html">
+                        Continuar
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header OPB">
+                    <div class="badge-xp">
+                        <div class="pontuacao">
+                            <p>★</p>
+                            <span>+850 XP</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body O_Primo">
+                    <div class="title-row">
+                        <div class="title-author">
+                            <h2>O Primo Basílio</h2>
+                            <p class="author">Eça de Queirós</p>
+                        </div>
+                        <span class="year">1971</span>
+                    </div>
+                    <p class="difficulty">
+                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.1875 12.6127C0.729167 11.1771 0 9.43391 0 7.38306C0 5.33221 0.729167 3.58899 2.1875 2.15339C3.64583 0.717797 5.41667 0 7.5 0C9.58333 0 11.3542 0.717797 12.8125 2.15339C14.2708 3.58899 15 5.33221 15 7.38306C15 9.43391 14.2708 11.1771 12.8125 12.6127C11.3542 14.0483 9.58333 14.7661 7.5 14.7661C5.41667 14.7661 3.64583 14.0483 2.1875 12.6127ZM11.4 11.2222C12.4667 10.1722 13 8.89248 13 7.38306C13 5.87363 12.4667 4.5939 11.4 3.54387C10.3333 2.49383 9.03333 1.96882 7.5 1.96882C5.96667 1.96882 4.66667 2.49383 3.6 3.54387C2.53333 4.5939 2 5.87363 2 7.38306C2 8.89248 2.53333 10.1722 3.6 11.2222C4.66667 12.2723 5.96667 12.7973 7.5 12.7973C9.03333 12.7973 10.3333 12.2723 11.4 11.2222ZM9.5 10.8285L10.9 9.45032L8.5 7.06313V3.44543H6.5V7.87526L9.5 10.8285Z" fill="white"/>
+                        </svg>
+                        Difícil
+                    </p>
+                    <div class="progress-container">
+                        <div class="progress-text">
+                            <span>Progresso</span>
+                            <span id="progresso-texto">30%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div id="progresso-barra" class="progress-fill"></div>
+                        </div>
+                    </div>
+                    <a class="btn-continue" id="btnFullscreen" href="/PAGES/Livros/O_Primo_Basílio/O_Primo_Basílio.html">
+                        Continuar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ranking">
+        <div class="posicao_site-ranking">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.89062 12.3205C10.5469 11.6745 10.875 10.89 10.875 9.96713C10.875 9.04425 10.5469 8.2598 9.89062 7.61378C9.23438 6.96776 8.4375 6.64475 7.5 6.64475C6.5625 6.64475 5.76562 6.96776 5.10938 7.61378C4.45312 8.2598 4.125 9.04425 4.125 9.96713C4.125 10.89 4.45312 11.6745 5.10938 12.3205C5.76562 12.9665 6.5625 13.2895 7.5 13.2895C8.4375 13.2895 9.23438 12.9665 9.89062 12.3205ZM5.30625 5.68495C5.55625 5.5496 5.82188 5.44193 6.10313 5.36195C6.38438 5.28196 6.66875 5.22967 6.95625 5.20506L5.0625 1.47661H3.1875L5.30625 5.68495ZM9.69375 5.68495L11.8313 1.47661H9.9375L8.34375 4.61441L8.7 5.3158C8.875 5.36502 9.04375 5.41732 9.20625 5.47269C9.36875 5.52806 9.53125 5.59882 9.69375 5.68495ZM3.3 12.4035C3.0875 12.0467 2.92188 11.6622 2.80313 11.2499C2.68438 10.8377 2.625 10.4101 2.625 9.96713C2.625 9.52415 2.68438 9.09654 2.80313 8.68432C2.92188 8.2721 3.0875 7.88757 3.3 7.53072C2.775 7.70299 2.34375 8.00754 2.00625 8.44437C1.66875 8.8812 1.5 9.38879 1.5 9.96713C1.5 10.5455 1.66875 11.0531 2.00625 11.4899C2.34375 11.9267 2.775 12.2313 3.3 12.4035ZM11.7 12.4035C12.225 12.2313 12.6563 11.9267 12.9938 11.4899C13.3313 11.0531 13.5 10.5455 13.5 9.96713C13.5 9.38879 13.3313 8.8812 12.9938 8.44437C12.6563 8.00754 12.225 7.70299 11.7 7.53072C11.9125 7.88757 12.0781 8.2721 12.1969 8.68432C12.3156 9.09654 12.375 9.52415 12.375 9.96713C12.375 10.4101 12.3156 10.8377 12.1969 11.2499C12.0781 11.6622 11.9125 12.0467 11.7 12.4035ZM6.06563 14.5539C5.60938 14.4123 5.1875 14.2185 4.8 13.9724C4.6875 13.997 4.575 14.0124 4.4625 14.0186C4.35 14.0247 4.23125 14.0278 4.10625 14.0278C2.96875 14.0278 2 13.634 1.2 12.8465C0.4 12.059 0 11.1054 0 9.98559C0 8.91504 0.3625 7.99831 1.0875 7.2354C1.8125 6.47248 2.70625 6.04796 3.76875 5.96182L0.75 0H6L7.5 2.95322L9 0H14.25L11.25 5.9249C12.3125 6.02334 13.2031 6.45402 13.9219 7.21694C14.6406 7.97986 15 8.89659 15 9.96713C15 11.0992 14.6 12.059 13.8 12.8465C13 13.634 12.025 14.0278 10.875 14.0278C10.7625 14.0278 10.6469 14.0247 10.5281 14.0186C10.4094 14.0124 10.2938 13.997 10.1813 13.9724C9.79375 14.2185 9.375 14.4123 8.925 14.5539C8.475 14.6954 8 14.7661 7.5 14.7661C7 14.7661 6.52188 14.6954 6.06563 14.5539ZM6.1125 11.9975L6.6375 10.3178L5.25 9.33957H6.95625L7.5 7.56763L8.04375 9.33957H9.75L8.3625 10.3178L8.8875 11.9975L7.5 10.9638L6.1125 11.9975Z" fill="#3890B1"/>
+            </svg>
+            <p>Ranking</p>
+        </div>
+        <h1>Top Leitores</h1>
+        <h2>Veja quem está dominando o ranking de leitura este mês</h2>
+    </div>
+    <div class="ranking-frame">
+        <div class="podio">
+            <div class="podio-card segundo">
+                <div class="medalha">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#ffffff">
+                        <path d="m377.65-404.65 38.26-125.18-103.48-77.39h126.18L480-739.78l40.39 132.56h127.18l-102.92 77.39 37.26 125.18L480-482.43l-102.35 77.78ZM237.78-27v-305.7q-48.39-49.26-70.15-109.21-21.76-59.96-21.76-120.92 0-141.65 96.24-237.89 96.24-96.24 237.89-96.24 141.65 0 238.17 96.24 96.53 96.24 96.53 237.89 0 60.96-22.05 120.92-22.04 59.95-70.43 109.21V-27L480-107.13 237.78-27Zm423.05-354.72q74.08-73.8 74.08-180.82 0-107.03-74.08-181.11-74.09-74.09-180.83-74.09-106.74 0-180.83 74.09-74.08 74.08-74.08 181.11 0 107.02 74.08 180.82 74.09 73.81 180.83 73.81 106.74 0 180.83-73.81ZM304-117.22l176-57.82 176 57.82V-282q-40.57 28.44-86.28 41.15Q524-228.13 480-228.13t-89.72-12.72Q344.57-253.56 304-282v164.78Zm176-82.61Z"/>
+                    </svg>
+                </div>
+                <div class="avatar-ranking prata">P</div>
+                <p class="podio-nome">Pedro Santos</p>
+                <p class="podio-nivel">Nível 23</p>
+                <p class="podio-xp">★ 11.200 XP</p>
+            </div>
+            <div class="podio-card primeiro">
+                <div class="medalha">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="49px" viewBox="0 -960 960 960" width="49px" fill="#ffffff">
+                        <path d="M203-160v-60h554v60H203Zm-1-144-53-334q-5 2-9.5 2.5t-9.5.5q-21 0-35.5-14.5T80-685q0-21 14.5-36t35.5-15q21 0 36 15t15 36q0 8-2.5 16t-7.5 14l148 66 141-194q-14-6-22.5-18.5T429-830q0-21 15-35.5t36-14.5q21 0 36 14.5t15 35.5q0 16-8.5 28.5T500-783l141 194 148-66q-5-6-7.5-14t-2.5-16q0-21 15-36t35-15q21 0 36 15t15 36q0 21-15 35.5T829-635q-5 0-9-1t-9-3l-53 335H202Z"/>
+                    </svg>
+                </div>
+                <div class="avatar-ranking ouro">A</div>
+                <p class="podio-nome">Ana Costa</p>
+                <p class="podio-nivel">Nível 25</p>
+                <p class="podio-xp">★ 12.450 XP</p>
+                <p class="podio-sequencia">🔥 45 dias de sequência</p>
+            </div>
+            <div class="podio-card terceiro">
+                <div class="medalha">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#ffffff">
+                        <path d="m377.65-404.65 38.26-125.18-103.48-77.39h126.18L480-739.78l40.39 132.56h127.18l-102.92 77.39 37.26 125.18L480-482.43l-102.35 77.78ZM237.78-27v-305.7q-48.39-49.26-70.15-109.21-21.76-59.96-21.76-120.92 0-141.65 96.24-237.89 96.24-96.24 237.89-96.24 141.65 0 238.17 96.24 96.53 96.24 96.53 237.89 0 60.96-22.05 120.92-22.04 59.95-70.43 109.21V-27L480-107.13 237.78-27Zm423.05-354.72q74.08-73.8 74.08-180.82 0-107.03-74.08-181.11-74.09-74.09-180.83-74.09-106.74 0-180.83 74.09-74.08 74.08-74.08 181.11 0 107.02 74.08 180.82 74.09 73.81 180.83 73.81 106.74 0 180.83-73.81ZM304-117.22l176-57.82 176 57.82V-282q-40.57 28.44-86.28 41.15Q524-228.13 480-228.13t-89.72-12.72Q344.57-253.56 304-282v164.78Zm176-82.61Z"/>
+                    </svg>
+                </div>
+                <div class="avatar-ranking bronze">J</div>
+                <p class="podio-nome">Júlia Oliveira</p>
+                <p class="podio-nivel">Nível 22</p>
+                <p class="podio-xp">★ 10.800 XP</p>
+            </div>
+        </div>
+        <div class="lista-ranking">
+            <div class="item-ranking">
+                <p class="item-pos">#4</p>
+                <div class="item-avatar-ranking" style="background: #5B63FF;">C</div>
+                <div class="item-info-ranking">
+                    <p class="item-nome-ranking">Carlos Lima</p>
+                    <div class="item-detalhes-ranking">
+                        <span>Nível 23</span><span>•</span>
+                        <span>14 livros</span><span>•</span>
+                        <span>🔥 30 dias</span>
+                    </div>
+                </div>
+                <div class="item-xp-ranking">★ 9.650<span>XP</span></div>
+            </div>
+            <div class="item-ranking">
+                <p class="item-pos">#5</p>
+                <div class="item-avatar-ranking" style="background: #FF5B5B;">B</div>
+                <div class="item-info-ranking">
+                    <p class="item-nome-ranking">Beatriz Souza</p>
+                    <div class="item-detalhes-ranking">
+                        <span>Nível 19</span><span>•</span>
+                        <span>13 livros</span><span>•</span>
+                        <span>🔥 28 dias</span>
+                    </div>
+                </div>
+                <div class="item-xp-ranking">★ 8.900<span>XP</span></div>
+            </div>
+        </div>
+        <div class="divisor-ranking">
+            <hr><p>Sua Posição</p><hr>
+        </div>
+        <div class="lista-ranking">
+            <div class="item-ranking proprio">
+                <p class="item-pos">#10</p>
+                <div class="item-avatar-ranking" style="background: #FF5B97;">V</div>
+                <div class="item-info-ranking">
+                    <p class="item-nome-ranking">Você</p>
+                    <div class="item-detalhes-ranking">
+                        <span>Nível 14</span><span>•</span>
+                        <span>8 livros</span><span>•</span>
+                        <span>🔥 15 dias</span>
+                    </div>
+                </div>
+                <div class="item-xp-ranking">★ 5.400<span>XP</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="macetes">
+        <div class="posicao_site-macete">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#3890B1">
+                <path d="M288-288h288v-72H288v72Zm0-156h384v-72H288v72Zm0-156h384v-72H288v72Zm-72 456q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h528q29.7 0 50.85 21.15Q816-773.7 816-744v528q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm0-72h528v-528H216v528Zm0-528v528-528Z"/>
+            </svg>
+            <p>Dicas Exclusivas</p>
+        </div>
+        <h1>Macetes de Redação</h1>
+        <h2>Aprenda técnicas essenciais e aprimore cada vez mais sua escrita</h2>
+    </div>
+    <div class="macetes-frame">
+
+        <div class="botoes-container">
+            <button onclick="mostrarInfo('info1')">Introdução</button>
+            <button onclick="mostrarInfo('info2')">Desenvolvimento</button>
+            <button onclick="mostrarInfo('info3')">Proposta de Intervenção</button>
+        </div>
+
+        <div class="quadro-info">
+
+            <div id="info1" class="conteudo">
+                <h2>Proposta de Intervenção</h2>
+                <p>
+                    A prova de redação do <strong>ENEM</strong> exige a elaboração
+                    de uma proposta de intervenção para o problema apresentado
+                    no tema, respeitando os direitos humanos.
+                </p>
+                <p>
+                    A proposta deve apresentar cinco elementos fundamentais:
+                    agente, ação, modo ou meio, efeito e detalhamento.
+                </p>
+
+                <div class="dica-redacao">
+                    <h4>Dica importante</h4>
+                    <p>
+                        Construa uma solução completa, viável e relacionada à
+                        discussão desenvolvida em sua redação. A proposta deve
+                        respeitar os direitos humanos e apresentar informações
+                        suficientes para que a intervenção seja compreendida.
+                    </p>
+                </div>
+
+                <h3>Os cinco elementos da proposta</h3>
+                <div class="elementos-macetes">
+                    <div class="elemento-macete">
+                        <h4>01. Agente</h4>
+                        <p>
+                            <strong>Quem?</strong>
+                            Identifique quem será responsável por realizar
+                            a intervenção.
+                        </p>
+                        <p>
+                            Exemplos: Governo Federal, escolas, Ministério da Educação
+                            ou organizações sociais.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>02. Ação</h4>
+                        <p>
+                            <strong>O quê?</strong>
+                            Apresente a medida que deverá ser realizada para
+                            enfrentar o problema discutido.
+                        </p>
+                        <p>
+                            Exemplos: promover campanhas, ampliar projetos
+                            educacionais ou desenvolver programas sociais.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>03. Modo ou meio</h4>
+                        <p>
+                            <strong>Como?</strong>
+                            Explique de que maneira a ação será executada.
+                        </p>
+                        <p>
+                            Exemplos: por meio de palestras, campanhas informativas,
+                            plataformas digitais ou parcerias institucionais.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>04. Efeito</h4>
+                        <p>
+                            <strong>Para quê?</strong>
+                            Indique o resultado esperado com a realização
+                            da intervenção.
+                        </p>
+                        <p>
+                            Exemplos: conscientizar a população, reduzir desigualdades
+                            ou ampliar o acesso à educação.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>05. Detalhamento</h4>
+                        <p>
+                            <strong>Que informação adicional?</strong>
+                            Acrescente uma explicação que torne um dos elementos
+                            da proposta mais específico.
+                        </p>
+                        <p>
+                            Exemplo: esclarecer o público-alvo de uma campanha,
+                            explicar a responsabilidade do agente ou especificar
+                            como uma ação será desenvolvida.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Exemplo de proposta de intervenção completa</h3>
+                <div class="dica-redacao">
+                    <p>
+                        <strong>Agente:</strong> o Ministério da Educação
+                    </p>
+                    <p>
+                        <strong>Ação:</strong> deve promover campanhas de incentivo
+                        à leitura entre os jovens
+                    </p>
+                    <p>
+                        <strong>Modo ou meio:</strong> por meio de projetos
+                        de leitura nas escolas públicas
+                    </p>
+                    <p>
+                        <strong>Efeito:</strong> a fim de ampliar o hábito da leitura
+                        e o acesso à literatura brasileira
+                    </p>
+                    <p>
+                        <strong>Detalhamento:</strong> com atividades semanais
+                        de interpretação e discussão de obras literárias adequadas
+                        às diferentes etapas de ensino.
+                    </p>
+                </div>
+
+                <h3>Estrutura para montar sua proposta</h3>
+                <div class="elemento-intervencao">
+                    <p>
+                        <strong>Modelo:</strong>
+                    </p>
+                    <p>
+                        Portanto, <strong>[agente]</strong> deve
+                        <strong>[ação]</strong>, por meio de
+                        <strong>[modo ou meio]</strong>, a fim de
+                        <strong>[efeito]</strong>. Essa medida deverá incluir
+                        <strong>[detalhamento]</strong>.
+                    </p>
+                    <p>
+                        <strong>Atenção:</strong> adapte a estrutura ao tema
+                        da redação e desenvolva uma proposta coerente com
+                        os argumentos apresentados.
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="info2" class="conteudo">
+                <h2>Desenvolvimento</h2>
+                <p>
+                    Como o próprio nome sugere, é nesses parágrafos que iremos dar
+                    sequência ao que foi exposto na introdução. O desenvolvimento tem
+                    como objetivo argumentar e defender as teses.
+                </p>
+
+                <h3>Possibilidades de desenvolvimento</h3>
+                <div class="elementos-intervencao">
+                    <div class="elemento-intervencao">
+                        <h4>01. Causa 1 e causa 2</h4>
+                        <p>
+                            D1: desenvolva a primeira causa.
+                            D2: desenvolva a segunda causa.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>02. Causa e consequência</h4>
+                        <p>
+                            D1: desenvolva a causa.
+                            D2: desenvolva a consequência.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>03. Teses sem causa ou consequência explícita</h4>
+                        <p>
+                            Essa estrutura pode ser utilizada em redações da VUNESP.
+                            Nesse caso, deixe cada tese clara no início do respectivo
+                            parágrafo de desenvolvimento.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Esquema 1: Teses — causa 1 e causa 2</h3>
+                <p>
+                    Nesse modelo, cada parágrafo de desenvolvimento apresenta
+                    uma das causas defendidas na introdução.
+                </p>
+
+                <div class="elementos-intervencao">
+                    <div class="elemento-intervencao">
+                        <h4>01. Tópico-frasal</h4>
+                        <p>
+                            É a frase que vem no início de cada parágrafo de
+                            desenvolvimento. O tópico-frasal é uma sinopse do que será
+                            discutido ao longo do parágrafo, ou seja, um resumo.
+                            <strong>Ele está lá para organizar o pensamento de quem lê.</strong>
+                            Quando as teses são causas, são elas que devem aparecer
+                            no tópico-frasal.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>02. Explicação</h4>
+                        <p>
+                            É aqui que precisamos provar ao leitor o motivo de termos
+                            escolhido aquela tese. O modo mais simples de iniciar essa
+                            parte é com elementos de coesão causais.
+                        </p>
+                        <p>
+                            Exemplos: “Isso ocorre porque...”, “Isso porque...”,
+                            “Isso acontece graças a...” e “Isso acontece pois...”.
+                        </p>
+                        <p>
+                            Caso queira, é aqui que o pensador ou a pensadora pode
+                            aparecer, já que a ideia poderá ser desdobrada em poucas
+                            palavras.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>03. Exemplo</h4>
+                        <p>
+                            O exemplo não é obrigatório, mas pode ser fundamental
+                            para trazer concretude ao argumento. Pense que é preciso
+                            fazer o leitor visualizar o que você está querendo dizer,
+                            utilizando algo que apareça no cotidiano.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>04. Consequência</h4>
+                        <p>
+                            A consequência no final do parágrafo de desenvolvimento
+                            é essencial para fechar a argumentação, pois transmite
+                            a noção de discussão encerrada.
+                        </p>
+                        <p>
+                            Depois de apresentar a tese, explicar por que determinado
+                            fator contribui para o problema e expor um exemplo,
+                            apresente uma consequência que conclua o raciocínio.
+                            Use conectivos que expressem essa ideia.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>05. O pulo do gato: consequência da consequência</h4>
+                        <p>
+                            Para deixar o texto sem lacunas, opte por detalhar duas
+                            consequências. Não se trata de duas ideias diferentes,
+                            mas de uma complementando a outra. Use conectivos
+                            consecutivos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dica-redacao">
+                    <h4>Como usar a referência externa?</h4>
+                    <p>
+                        Não é uma regra, mas os textos de nota máxima costumam utilizar
+                        ideias de pensadores e pensadoras por meio de paráfrases.
+                        Ou seja, o conceito aparece com as suas palavras e, por isso,
+                        já é uma interpretação.
+                    </p>
+                </div>
+
+                <h3>Esquema 2: Teses — causa e consequência</h3>
+                <div class="elementos-intervencao">
+                    <div class="elemento-intervencao">
+                        <h4>Desenvolvimento 1: causa</h4>
+                        <p>
+                            Use o mesmo esquema apresentado anteriormente para
+                            desenvolver argumentos de causa.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>Desenvolvimento 2: consequência</h4>
+                        <p>
+                            Desenvolva a consequência relacionada à causa apresentada
+                            na introdução.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="elementos-intervencao">
+                    <div class="elemento-intervencao">
+                        <h4>01. Tópico-frasal</h4>
+                        <p>
+                            Explique qual é a consequência atrelada à causa exposta
+                            na introdução. Deve haver uma frase que resuma o que será
+                            desenvolvido no restante do parágrafo.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>02. Explicação da consequência</h4>
+                        <p>
+                            Desdobre os motivos para que essa consequência aconteça.
+                            Pergunte-se: “Por que isso acontece?”.
+                        </p>
+                        <p>
+                            Use conectivos como “Isso ocorre porque...”,
+                            “Nesse sentido...” e “Nesse aspecto...”.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>03. Consequência da consequência</h4>
+                        <p>
+                            A tese está no tópico-frasal e é ela que deve ser explicada.
+                            Apresente os outros desdobramentos a partir da ideia
+                            principal do parágrafo.
+                        </p>
+                        <p>
+                            Use expressões como “Sendo assim...” e “Desse modo...”.
+                        </p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>04. Exemplo</h4>
+                        <p>
+                            Traga um ponto de concretude. Pode ser algo do mundo real
+                            ou ficcional, desde que seja realista. Não se esqueça de
+                            terminar com uma interpretação do exemplo que apoie o tema.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dica-redacao">
+                    <h4>Como usar a referência externa?</h4>
+                    <p>
+                        Não é uma regra, mas os textos de nota máxima costumam utilizar
+                        ideias de pensadores e pensadoras por meio de paráfrases.
+                        O conceito aparece com as suas palavras e, por isso,
+                        já é uma interpretação.
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="info3" class="conteudo">
+                <h2>Proposta de Intervenção</h2>
+                <p>
+                    A prova de redação do <strong>ENEM</strong>
+                    exige a elaboração de uma proposta de intervenção
+                    para o problema apresentado no tema, respeitando
+                    os direitos humanos.
+                </p>
+                <p>
+                    A proposta deve apresentar cinco elementos:
+                    agente, ação, modo ou meio, efeito e detalhamento.
+                </p>
+                <div class="dica-redacao">
+                    <strong>Dica importante:</strong>
+                    construa uma solução completa, viável e relacionada
+                    à discussão desenvolvida em sua redação.
+                </div>
+
+                <h3>Os cinco elementos da proposta</h3>
+                <div class="elementos-intervencao">
+                    <div class="elemento-intervencao">
+                        <h4>01. Agente</h4>
+                        <p>Quem será responsável por realizar a ação?</p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>02. Ação</h4>
+                        <p>Qual medida deverá ser realizada?</p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>03. Modo ou meio</h4>
+                        <p>De que maneira a ação será executada?</p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>04. Efeito</h4>
+                        <p>Qual resultado se pretende alcançar?</p>
+                    </div>
+
+                    <div class="elemento-intervencao">
+                        <h4>05. Detalhamento</h4>
+                        <p>Que informação adicional explica melhor
+                        um dos elementos da proposta?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="redes-sociais">
+            <a class="Instagram" href="https://www.instagram.com/">
+                <img src="/FRONTEND/IMAGES/images_social-media/instagram.png" alt="Logo do Aplicativo Instagram" width="30px" height="30px">
+            </a>
+            <a class="Facebook" href="https://www.facebook.com/?locale=pt_BR">
+                <img src="/FRONTEND/IMAGES/images_social-media/facebook.png" alt="Logo do Aplicativo Facebook" width="30px" height="30px">
+            </a>
+            <a class="Email" href="https://mail.google.com/">
+                <img src="/FRONTEND/IMAGES/images_social-media/google.png" alt="Logo do Aplicativo Google" width="30px" height="30px">
+            </a>
+        </div>
+        <p>© 2026 - lêBrasil</p>
+    </footer>
+<script src="/FRONTEND/SCRIPTS/script.js"></script>
+</body>
+</html>

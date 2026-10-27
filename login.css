@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Fredoka:wght@300..700&family=Idiqlat:wght@200;300;400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jacques+Francois&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/* CONFIG GERAL */
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E2F7FF;
+    overflow-x: hidden;
+}
+
+header,
+form,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+
+/*RADIAIS*/
+.luz-esquerda1 {
+    position: absolute;
+
+    top: -100px;
+    left: -100px;
+
+    width: 800px;
+    height: 500px;
+
+    background:
+    radial-gradient( circle at 0% 50%,
+        rgba(97, 202, 248, 0.9) 0%,
+        rgba(97, 202, 248, 0.5) 35%,
+        rgba(97, 202, 248, 0.2) 65%,
+        rgba(97, 202, 248, 0.05) 100%
+    );
+
+    z-index: 0;
+    filter: blur(40px);
+}
+
+.luz-direita1 {
+    position: absolute;
+
+    top: 300px;
+    left: 900px;
+
+    width: 800px;
+    height: 500px;
+
+    background:
+    radial-gradient( circle at right center,
+        rgba(97, 202, 248, 0.9) 0%,
+        rgba(97, 202, 248, 0.5) 35%,
+        rgba(97, 202, 248, 0.2) 65%,
+        rgba(97, 202, 248, 0.05) 100%
+    );
+
+    z-index: 0;
+    filter: blur(40px);
+}
+
+.container-radial {
+    position: absolute;
+    top: 662px;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.luz-esquerda2 {
+    position: absolute;
+
+    top: 180px;
+    left: -100px;
+
+    width: 800px;
+    height: 500px;
+
+    background:
+    radial-gradient(
+        circle at 0% 50%,
+        rgba(97, 202, 248, 0.9) 0%,
+        rgba(97, 202, 248, 0.5) 35%,
+        rgba(97, 202, 248, 0.2) 65%,
+        rgba(97, 202, 248, 0.05) 100%
+    );
+
+    z-index: 0;
+    filter: blur(40px);
+}
+
+
+/* lOGO */
+#Logo {
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+
+/* TEXTO PRINCIPAL */
+header h1 {
+    font-family: "Fredoka";
+    font-weight: 600;
+    font-size: 63px;
+    color: #3890B1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+header h2 {
+    font-family: "Jacques Francois";
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+
+
+/* FORMULÁRIO */
+form {
+    margin: auto;
+    width: 883px;
+    height: auto;
+    border-radius: 45px;
+    background-color: #E2F7FF;
+    margin-top: 25px;
+    margin-bottom: 88px;
+}
+
+form h3 {
+    font-family: "Fredoka";
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+form h4 {
+    font-family: "Jacques Francois";
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.campo1 label,
+.campo2 label {
+    font-family: "Inter";
+    font-weight: 600;
+    margin-left: 17px;
+}
+
+.campo1 {
+    margin-top: 9px; 
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 750px;
+}
+
+.campo2 {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: 750px;
+    margin: 0 auto 20px auto;
+}
+
+.input-wrapper {
+    background-color: #FFFFFF;
+    height: 50px;
+    width: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center; 
+    border-radius: 30px;
+    border: 5px solid #8BC0D4;
+    padding: 0 23px;
+}
+
+.campo2 .input-wrapper .cadeado{
+    margin-left: 5px;
+}
+
+.campo2 .input-wrapper input {
+    margin-left: -7px;
+}
+
+.input-wrapper input {
+    border: none;
+    height: 45px;
+    width: 670px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Inter";
+    margin: auto;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#mostrarSenha {
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+}
+
+#mostrarSenha .olho-visivel {
+    display: block;
+}
+
+#mostrarSenha .olho-escondido {
+    display: none;
+}
+
+.grade {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.confirmar {
+    background-color: #0C4F68;
+    width: 343px;
+    height: 59px;
+    border-radius: 15px;
+    border: 5px solid #8BC0D4;
+    color: #FFFFFF;
+    font-family: "Source Serif 4";
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+}
+
+.quebra {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+
+.quebra p {
+    font-family: "Idiqlat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #0C4F68;
+}
+
+hr {
+    border: 0; 
+    height: 3px; 
+    background: rgba(12, 79, 104, 0.3); 
+    width: 364px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cadastro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.cadastro p {
+    font-family: "Inter";
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.cadastro a {
+    font-family: "Idiqlat";
+    color: #1E6C89;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+/* RODAPÉ */
+footer {
+    margin-top: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    height: 70px;
+    background-color: #8BC0D4;
+}
+
+footer p {
+    font-family: "Open Sans";
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 200px;
+}

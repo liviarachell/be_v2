@@ -1,0 +1,273 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-10-21T17:00:00.000Z",
+  "__export_source": "insomnia.desktop.app",
+  "resources": [
+    {
+      "_id": "wrk_lebrasil",
+      "parentId": null,
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "name": "lêBrasil API",
+      "description": "Rotas da API local. Configure base_url e token após iniciar o backend.",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_lebrasil_base",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "name": "Base Environment",
+      "data": {
+        "base_url": "http://127.0.0.1:3000",
+        "token": ""
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url",
+          "token"
+        ]
+      },
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1,
+      "_type": "environment"
+    },
+    {
+      "_id": "fld_auth",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "name": "Autenticação",
+      "description": "",
+      "environment": {},
+      "metaSortKey": -1,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_health",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/health",
+      "name": "Health + conexão MySQL",
+      "description": "Deve retornar status ok e banco conectado.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": 1,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_register",
+      "parentId": "fld_auth",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/auth/register",
+      "name": "Cadastrar usuário",
+      "description": "Use um e-mail, CPF e nome ainda não cadastrados. A resposta retorna token; não use dados pessoais reais em ambientes compartilhados.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"nome\": \"Usuario Teste\",\n  \"email\": \"teste@example.com\",\n  \"cpf\": \"12345678901\",\n  \"senha\": \"SenhaForte123!\",\n  \"confirmarSenha\": \"SenhaForte123!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 2,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_login",
+      "parentId": "fld_auth",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/auth/login",
+      "name": "Login",
+      "description": "Atualize o e-mail e senha para uma conta de teste já existente.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"teste@example.com\",\n  \"senha\": \"SenhaForte123!\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 3,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_me",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/me",
+      "name": "Meu perfil",
+      "description": "Requer token Bearer. Copie o token da resposta de login para o ambiente.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 4,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_books",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/books",
+      "name": "Listar meus livros",
+      "description": "Retorna livros do usuário autenticado.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_book_create",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/books",
+      "name": "Adicionar livro à biblioteca",
+      "description": "Requer token Bearer. O título, autor e gênero precisam respeitar os limites do esquema atual.",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"titulo\": \"Livro de teste\",\n  \"autor\": \"Autor de teste\",\n  \"genero\": \"Romance\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 6,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_progress",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/books/1/progress",
+      "name": "Atualizar progresso",
+      "description": "Troque 1 pelo id retornado na listagem/cadastro. Progresso de 0 a 100.",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"progresso\": 25\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 7,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    },
+    {
+      "_id": "req_ranking",
+      "parentId": "wrk_lebrasil",
+      "modified": 1761066000000,
+      "created": 1761066000000,
+      "url": "{{ _.base_url }}/api/ranking",
+      "name": "Consultar ranking",
+      "description": "Requer token Bearer.",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Bearer {{ _.token }}"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": 8,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "_type": "request"
+    }
+  ]
+}
